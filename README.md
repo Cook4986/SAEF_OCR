@@ -1,5 +1,6 @@
 # SAEF_OCR
-Handwriting transcriptions (HTR) throughput autmation, for processing and accessing the contents of handwritten documents in "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant
+Handwriting transcriptions (HTR) throughput automation, for processing and accessing the contents of handwritten documents in "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant
+
 ## Background
 ### About the grant
 This notebook represents the OCR (Optical Character Recognition) component of Houghton Library’s Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library (SAEF) project. Regarding the grant itself, PI Dorothy Berry had this to say:
@@ -13,14 +14,12 @@ A key sub-goal of the AOK SAEF grant is to provide researchers with the OCR from
 ### Newspaper Navigator
 
 ## The Code
-
-
 ### Inputs
 The SAEF_OCR python notebook takes a comma separated value (CSV) file and associated image set. As written, the notebook requires that the CSV include at least one prexisting column, "FILE-
 OSN", which we identified as cannonical based on batch metadata returned along with images from the DRS (see: below, for more info). 
 
 ### Outputs
-and returns annotated images (with transcriptions), .json-type transciptions (per-image), and .txt transcriptions (per image)
+The SAEF_OCR notebook returns annotated images (with transcriptions), .json-type transciptions (per-image), and .txt transcriptions (per image). The notebook also returns an "OCR_LookupTable" CSV file listing the location the absolute location of each output file as well as the input identifier (FILE-OSN) and input image location (in NextCloud). 
 
 ### Customizations
 The project team considered engaging the "
