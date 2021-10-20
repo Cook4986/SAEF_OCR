@@ -1,5 +1,5 @@
 # SAEF_OCR
-Optical character recognition throughput autmoation for processing and accessing the contents of handwritten documents in "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant
+Handwriting transcriptions (HTR) throughput autmation, for processing and accessing the contents of handwritten documents in "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant
 ## Background
 ### About the grant
 This notebook represents the OCR (Optical Character Recognition) component of Houghton Library’s Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library (SAEF) project. Regarding the grant itself, PI Dorothy Berry had this to say:
@@ -26,11 +26,7 @@ and returns annotated images (with transcriptions), .json-type transciptions (pe
 The project team considered engaging the "
 
 ## Associated technologies
-The handwritten document transcription data associated with the SAEF project moves between three primary platforms: Harvard's [Digital Repository Service (DRS)](https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=204385879); [NextCloud](https://nextcloud.com/), our secure, medium-term storage solution, where document image data (and metadata) are staged, and the [Harvard Dataverse](https://dataverse.harvard.edu/), a discipline-agnostic data hosting platform for distributing scholarship. 
-
-### Harvard *Digital Repository Service*
-### nextcloud
-### Harvard *Dataverse*
+The handwritten document transcription data associated with the SAEF project moves between three primary platforms: Harvard's [Digital Repository Service (DRS)](https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=204385879); [NextCloud](https://nextcloud.com/), our secure, medium-term storage solution, where document image data (and metadata) are staged, and the [Harvard Dataverse](https://dataverse.harvard.edu/), a discipline-agnostic data hosting platform for distributing scholarship. Central to the SAEF_OCR throughput notebook is Mike Hucka's [*HandPrint*](https://github.com/caltechlibrary/handprint) library, which automates the batch loading of images to various 3rd party cloud servieces (Google, Amazon, Microsoft) for handwriting transcription. Finally, OCR lookup table used for data management was generated through the use of the Pandas Python library.
 
 ## HTR Alternatives
 *Transkribus
@@ -39,3 +35,6 @@ The handwritten document transcription data associated with the SAEF project mov
 ## Downstream applications
 
 ## Further reading
+
+## Acknowledgements
+This work was funded by an internal, Harvard Library’s [Advancing Open Knowledge Grants Program], "...which seeks to advance open knowledge and foster innovation to further diversity, inclusion, belonging and anti-racism", and the code was developed in collaboration with Harvard Library's [*Research Data Management Program*](https://hlrdm.library.harvard.edu/)
