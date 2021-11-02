@@ -23,7 +23,7 @@ In this way, it's useful to think about the transcriptions derived through this 
 
 ## The Code
 ### Inputs
-The SAEF_OCR python notebook takes a comma separated value (CSV) file and associated image set, originating from the Harvard DRS. As written, the notebook requires that the CSV include at least one prexisting column, "FILE-OSN", which HL librarians identified as cannonical, for these purposes, based on batch metadata returned along with images from the DRS (see: below, for more info). 
+The SAEF_OCR python notebook takes a comma separated value (CSV) file and associated image set, originating in the Harvard DRS (See: "Associated Tools", below). As written, the notebook requires that the CSV include at least one prexisting column, "FILE-OSN", which HL librarians identified as cannonical, for these purposes, based on batch metadata returned along with images from the DRS (see: below, for more info). 
 
 ### Outputs
 The SAEF_OCR notebook returns annotated images (with transcriptions), via the HandPrint software, which includes json-type transciptions (per-image), and .txt transcriptions (per image). The notebook also returns a new "OCR_LookupTable" CSV file correlatting the cannonical "FILE-OSN" image identifier string with the absolute location of each transcription output  as well as the input image location (in NextCloud). 
@@ -31,7 +31,7 @@ The SAEF_OCR notebook returns annotated images (with transcriptions), via the Ha
 ### Customizations/Limitations
 The project team considered engaging the "
 
-## Associated technologies
+## Associated Tools
 The handwritten document transcription data associated with the SAEF project moves between three primary platforms: Harvard's [Digital Repository Service (DRS)](https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=204385879), where the source material is archived; [NextCloud](https://nextcloud.com/), our secure, medium-term storage solution, where document image data (and metadata) are staged, and (using their desktop client), absolute filepaths are simulated for us in the Python notebook; and the [Harvard Dataverse](https://dataverse.harvard.edu/), a discipline-agnostic data hosting platform for distributing scholarship. Central to the SAEF_OCR throughput notebook is Mike Hucka's [*HandPrint*](https://github.com/caltechlibrary/handprint) library, which automates the batch loading of images to various 3rd party cloud servieces (Google, Amazon, Microsoft) for handwriting transcription. Finally, OCR lookup table used for data management was generated through the use of the Pandas Python library.
 
 ## HTR (handwriting transcription) Alternatives
