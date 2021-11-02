@@ -1,7 +1,7 @@
 # SAEF_OCR
-Handwriting transcriptions (HTR) throughput automation, for processing the contents of handwritten documents associated with the "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grantand preparing them for deposit in [Dataverse](https://dataverse.harvard.edu/). 
+Handwriting transcriptions (HTR) throughput, for generating and processing the contents of handwritten documents associated with the "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant and preparing them for deposit in [Dataverse](https://dataverse.harvard.edu/). 
 
-![](http://matt.share.library.harvard.edu/blog/wp-content/uploads/2021/11/hou00201c00132_0001.handprint-microsoft.png)
+![](http://matt.share.library.harvard.edu/blog/wp-content/uploads/2021/11/hou00201c00132_0001.handprint-microsoft-1.png)
 
 ## Background
 ### About the grant
@@ -16,9 +16,10 @@ A key sub-goal of the larger AOK SAEF grant effort is to provide researchers wit
 ### Newspaper Navigator
 Philosophically, the SAEF OCR workflow documented here is influenced by Ben Lee's ["Newspaper Navigator"](https://github.com/LibraryOfCongress/newspaper-navigator) project. Working with more than 16 million pages of digitized American newspapers, Lee, and his colleagues at the Library of Congress (where he developed this project as _Innovator in Residence_), Lee deployed machine learning to effectively identify the content of illustrations, photographs, maps, and more. The project is notable both for its streamlined end user interface, whereby users can "train my AI" and manually curate new sub-sets of images from the collection to initiate a similarity search using [pre-trained image classification models](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md), and for the thoroughness with which Lee and company documented the origin and limitations of their source data and associated AI technologies ("See Compounded Mediation: A Data Archaeology of the Newspaper Navigator Dataset", in the Further Reading section, below). 
 
-Where the SAEF OCR project differs from Newspaper Navigator is in 1) the lack of ground truth data and 2) the use of 3rd party, "big tech" vendor solutions for generating transcriptions of handwritten documents. As Lee and others haved noted (See: "Further Reading" section, below), bias enters machine learning workflows at multiple points, beginning with the original digitization and proceeding to the algorithmic bias that influences . It's therefore important to note, as Lee (et al. 2020) did, that "[A]ny use of machine learning and artificial intelligence in the context of cultural heritage must be done with an understanding of broader socio-technical ecosystems in which the algorithms have been developed, trained, and deployed"(1).
+Where the SAEF OCR project differs from Newspaper Navigator is in 1) the lack of ground truth data and 2) the use of 3rd party, "big tech" vendor solutions for generating transcriptions of handwritten documents. As Lee and others haved noted (See: "Further Reading" section, below), bias enters machine learning workflows at multiple points, beginning with the original digitization and proceeding to the algorithmic bias that influences . It's therefore important to note, as Lee (et al. 2020) did, that 
+> "[A]ny use of machine learning and artificial intelligence in the context of cultural heritage must be done with an understanding of broader socio-technical ecosystems in which the algorithms have been developed, trained, and deployed"(1).
 
-In this way, it's useful to think about the transcriptions derived through this SAEF OCR workflow as more akin to the ["Pre-Packaged" datasets](https://news-navigator.labs.loc.gov/), which were made available - assuming specific caveats and limitations - 
+In this way, it's useful to think about the transcriptions derived through this SAEF OCR workflow as more akin to the ["Pre-Packaged" datasets](https://news-navigator.labs.loc.gov/), which were made available - assuming specific caveats and limitations - for the benefit of non-technical researchers who may be seeking to get a feel for the shape of, and patterns in, unwieldy datasets. So, the workflows and technologies documented here and elswhere , while fraught, represent a low-cost, mostly automated way to begin exploring the contents of large, handwritten document collections. 
 
 ## The Code
 ### Inputs
