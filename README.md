@@ -32,7 +32,7 @@ The SAEF_OCR notebook returns annotated images (with transcriptions), via the Ha
 The project team considered engaging the "
 
 ## Associated technologies
-The handwritten document transcription data associated with the SAEF project moves between three primary platforms: Harvard's [Digital Repository Service (DRS)](https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=204385879), where the source material is archived; [NextCloud](https://nextcloud.com/), our secure, medium-term storage solution, where document image data (and metadata) are staged, and the [Harvard Dataverse](https://dataverse.harvard.edu/), a discipline-agnostic data hosting platform for distributing scholarship. Central to the SAEF_OCR throughput notebook is Mike Hucka's [*HandPrint*](https://github.com/caltechlibrary/handprint) library, which automates the batch loading of images to various 3rd party cloud servieces (Google, Amazon, Microsoft) for handwriting transcription. Finally, OCR lookup table used for data management was generated through the use of the Pandas Python library.
+The handwritten document transcription data associated with the SAEF project moves between three primary platforms: Harvard's [Digital Repository Service (DRS)](https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=204385879), where the source material is archived; [NextCloud](https://nextcloud.com/), our secure, medium-term storage solution, where document image data (and metadata) are staged, and (using their desktop client), absolute filepaths are simulated for us in the Python notebook; and the [Harvard Dataverse](https://dataverse.harvard.edu/), a discipline-agnostic data hosting platform for distributing scholarship. Central to the SAEF_OCR throughput notebook is Mike Hucka's [*HandPrint*](https://github.com/caltechlibrary/handprint) library, which automates the batch loading of images to various 3rd party cloud servieces (Google, Amazon, Microsoft) for handwriting transcription. Finally, OCR lookup table used for data management was generated through the use of the Pandas Python library.
 
 ## HTR (handwriting transcription) Alternatives
 * [Transkribus](https://readcoop.eu/transkribus/)
@@ -47,7 +47,7 @@ The handwritten document transcription data associated with the SAEF project mov
 * [“Compounded Mediation: A Data Archaeology of the Newspaper Navigator Dataset”](https://hcommons.org/deposits/item/hc:32415/) - Lee et al., 2020.
 * ["The Equivalence of "Close" and "Distant" Reading; or, Toward a New OBject for Data-Rich Literary History"](https://read.dukeupress.edu/modern-language-quarterly/article/78/1/77/19924) - Katherine Bode
 * ["Machine Learning + Libraries: A Report on the State of the Field"(Machine Learning + Libraries: A Report on the State of the Field"](https://apo.org.au/node/307049) - Ryan Cordell
-* 
+* [Towards Knowledge Discovery from the Vatican Secret Archives. In Codice Ratio - Episode 1: Machine Transcription of the Manuscripts](https://dl.acm.org/doi/abs/10.1145/3219819.3219879) - Firmani et al. 2018
 
 ## Acknowledgements
 This work was funded by an internal, Harvard Library’s [Advancing Open Knowledge Grants Program], "...which seeks to advance open knowledge and foster innovation to further diversity, inclusion, belonging and anti-racism", and the code was developed in collaboration with Harvard Library's [*Research Data Management Program*](https://hlrdm.library.harvard.edu/)
