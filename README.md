@@ -1,17 +1,18 @@
 # SAEF_OCR
-Handwriting transcriptions (HTR) throughput automation, for processing and accessing the contents of handwritten documents in "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant
+Handwriting transcriptions (HTR) throughput automation, for processing and accessing the contents of handwritten documents in "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant and preparing them for deposit in [Dataverse](https://dataverse.harvard.edu/). 
 
 ## Background
 ### About the grant
-This notebook represents the OCR (Optical Character Recognition) component of Houghton Library’s Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library (SAEF) project. Regarding the grant itself, PI Dorothy Berry had this to say:
+This notebook represents the lifecycle of the OCR (Optical Character Recognition) component of Houghton Library’s Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library (SAEF) project. Regarding the grant itself, PI Dorothy Berry had this to say:
 
 *"In the Summer of 2020 Houghton Library committed to focusing our project digitization for the upcoming year on a curated set of 2000+ rare and unique materials illustrating African American history from the 18th century through the turn of the 20th century. The project, in process with an internal Houghton team and colleagues in Imaging Services, is planned to culminate with two primary deliverables besides hundreds of newly cataloged and digitized primary sources: a DublinCore based dataset on the digitized records available through DataVerse, and an easy to access curated CURIOsity site. The project is guided by a trifecta of Harvard Library Values; Seek collaboration, Embrace diverse perspectives, Champion access".*
 
-A key sub-goal of the AOK SAEF grant is to provide researchers with the OCR from our digitized objects, to open research possibilities up beyond human capability. The bulk of the materials to be digitized are 19th century published materials which OCR relatively well. There are, however, many key documents that fare less well-- particularly hand-written material. Handwritten material in our collection includes letters from famed Black abolitionists, letters from formerly enslaved peoples to the Freedmen’s Bureau, personal recollections of Gullah-Geechee sacred music, and more. Library collections, like SAEF, represent test beds for tools and systems that transcend discipline and media.
+A key sub-goal of the AOK SAEF grant is to provide researchers with usable OCR from our digitized objects, to open research possibilities for analysis of the collection at scale. While the bulk of the materials to be digitized are 19th century published materials which can be transcribed accurately without human oversight, there are many key documents that are resistant to traditional technologies-- particularly hand-written material. Handwritten material in our collection includes letters from famed Black abolitionists, letters from formerly enslaved peoples to the Freedmen’s Bureau, personal recollections of Gullah-Geechee sacred music, and more. Library collections, like SAEF, represent test beds for tools and systems that transcend discipline and media.
 
 
 ### Prior work
 ### Newspaper Navigator
+The SAEF OCR workflow documented here takes multiple queues from Ben Lee's ["Newspaper Navigator"](https://github.com/LibraryOfCongress/newspaper-navigator) project. Working with more than 16 million pages of digitized American newspapers, Lee, and his colleagues at the Library of Congress (where he developed this project as _Innovator in Residence_), Lee deployed machine learning to effectively identify the content of illustrations, photographs, maps, and more. The project is notable both for its streamlined end user interface, whereby 
 
 ## The Code
 ### Inputs
@@ -34,6 +35,9 @@ The handwritten document transcription data associated with the SAEF project mov
 ## Downstream applications
 
 ## Further reading
+* ["The Equivalence of "Close" and "Distant" Reading; or, Toward a New OBject for Data-Rich Literary History"](https://read.dukeupress.edu/modern-language-quarterly/article/78/1/77/19924) - Katherine Bode
+* ["Machine Learning + Libraries: A Report on the State of the Field"(Machine Learning + Libraries: A Report on the State of the Field"](https://apo.org.au/node/307049) - Ryan Cordell
+* 
 
 ## Acknowledgements
 This work was funded by an internal, Harvard Library’s [Advancing Open Knowledge Grants Program], "...which seeks to advance open knowledge and foster innovation to further diversity, inclusion, belonging and anti-racism", and the code was developed in collaboration with Harvard Library's [*Research Data Management Program*](https://hlrdm.library.harvard.edu/)
