@@ -1,9 +1,9 @@
 # SAEF_OCR
-Handwriting transcriptions (HTR) throughput automation, for processing and accessing the contents of handwritten documents in "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant and preparing them for deposit in [Dataverse](https://dataverse.harvard.edu/). 
+Handwriting transcriptions (HTR) throughput automation, for processing and accessing the contents of handwritten documents associated with the "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grantand preparing them for deposit in [Dataverse](https://dataverse.harvard.edu/). 
 
 ## Background
 ### About the grant
-This notebook represents the lifecycle of the OCR (Optical Character Recognition) component of Houghton Library’s Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library (SAEF) project. Regarding the grant itself, PI Dorothy Berry had this to say:
+This notebook represents the internal (to Harvard Library) lifecycle of the OCR (Optical Character Recognition) component of Houghton Library’s ["Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library (SAEF) project"(https://wiki.harvard.edu/confluence/display/HoughtonTechnicalServices/FY+21+Digital+Project+-+Slavery%2C+Abolition%2C+Emancipation%2C+and+Freedom%3A+Primary+Sources+from+Houghton+Library). Regarding the grant itself, PI Dorothy Berry had this to say:
 
 *"In the Summer of 2020 Houghton Library committed to focusing our project digitization for the upcoming year on a curated set of 2000+ rare and unique materials illustrating African American history from the 18th century through the turn of the 20th century. The project, in process with an internal Houghton team and colleagues in Imaging Services, is planned to culminate with two primary deliverables besides hundreds of newly cataloged and digitized primary sources: a DublinCore based dataset on the digitized records available through DataVerse, and an easy to access curated CURIOsity site. The project is guided by a trifecta of Harvard Library Values; Seek collaboration, Embrace diverse perspectives, Champion access".*
 
@@ -12,7 +12,9 @@ A key sub-goal of the AOK SAEF grant is to provide researchers with usable OCR f
 
 ### Prior work
 ### Newspaper Navigator
-The SAEF OCR workflow documented here takes multiple queues from Ben Lee's ["Newspaper Navigator"](https://github.com/LibraryOfCongress/newspaper-navigator) project. Working with more than 16 million pages of digitized American newspapers, Lee, and his colleagues at the Library of Congress (where he developed this project as _Innovator in Residence_), Lee deployed machine learning to effectively identify the content of illustrations, photographs, maps, and more. The project is notable both for its streamlined end user interface, whereby 
+The SAEF OCR workflow documented here takes multiple queues from Ben Lee's ["Newspaper Navigator"](https://github.com/LibraryOfCongress/newspaper-navigator) project. Working with more than 16 million pages of digitized American newspapers, Lee, and his colleagues at the Library of Congress (where he developed this project as _Innovator in Residence_), Lee deployed machine learning to effectively identify the content of illustrations, photographs, maps, and more. The project is notable both for its streamlined end user interface, whereby users can "train my AI" and manually curate new sub-sets of images from the collection and initiate a cross-collection similarity search using [pre-trained image classification models](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md). 
+
+Where the SAEF OCR project differs from Newspaper Navigator is in 1) the lack of ground truth data and 2) the use of 3rd party, "big tech" vendor solutions for generating transcriptions of handwritten documents. As Lee (et al. 2020) suggest, In this way, it's useful to think about the transcriptions derived through this SAEF OCR workflow as more akin to the ["Pre-Packaged"] datasets
 
 ## The Code
 ### Inputs
