@@ -1,5 +1,5 @@
 # SAEF_OCR
-Handwriting transcriptions (HTR) throughput, for generating and processing the contents of handwritten documents associated with the "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant and preparing them for deposit in [Dataverse](https://dataverse.harvard.edu/). 
+Handwriting transcription (HTR) throughput, for generating and processing the contents of handwritten documents associated with the "Enhancing Slavery, Abolition, Emancipation, and Freedom: Primary Sources from Houghton Library for Deeper Research" grant and preparing them for deposit in [Dataverse](https://dataverse.harvard.edu/). 
 
 ![](http://matt.share.library.harvard.edu/blog/wp-content/uploads/2021/11/hou00201c00132_0001.handprint-microsoft-1.png)
 
