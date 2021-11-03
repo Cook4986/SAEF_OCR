@@ -12,7 +12,7 @@ This notebook represents the internal (to Harvard Library) lifecycle of the OCR 
 A key sub-goal of the larger AOK SAEF grant effort is to provide researchers with usable OCR from our digitized objects, to open research possibilities for analysis of the collection at scale. While the bulk of the materials to be digitized are 19th century published materials which can be transcribed accurately without human oversight, there are many key documents that are resistant to traditional technologies-- particularly hand-written material. Handwritten material in our collection includes letters from famed Black abolitionists, letters from formerly enslaved peoples to the Freedmen’s Bureau, personal recollections of Gullah-Geechee sacred music, and more. Library collections, like SAEF, represent test beds for tools and systems that transcend discipline and media.
 
 
-### Prior work
+## Prior work
 ### Newspaper Navigator
 Philosophically, the SAEF OCR workflow documented here is influenced by Ben Lee's ["Newspaper Navigator"](https://github.com/LibraryOfCongress/newspaper-navigator) project. Working with more than 16 million pages of digitized American newspapers, Lee, and his colleagues at the Library of Congress (where he developed this project as _Innovator in Residence_), Lee deployed machine learning to effectively identify the content of illustrations, photographs, maps, and more. The project is notable both for its streamlined end user interface, whereby users can "train my AI" and manually curate new sub-sets of images from the collection to initiate a similarity search using [pre-trained image classification models](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md), and for the thoroughness with which Lee and company documented the origin and limitations of their source data and associated AI technologies ("See Compounded Mediation: A Data Archaeology of the Newspaper Navigator Dataset", in the Further Reading section, below). 
 
@@ -47,7 +47,7 @@ The handwritten document transcription data associated with the SAEF project mov
 * [“Compounded Mediation: A Data Archaeology of the Newspaper Navigator Dataset”](https://hcommons.org/deposits/item/hc:32415/) - Lee et al., 2020.
 * ["The Equivalence of "Close" and "Distant" Reading; or, Toward a New OBject for Data-Rich Literary History"](https://read.dukeupress.edu/modern-language-quarterly/article/78/1/77/19924) - Katherine Bode
 * ["Machine Learning + Libraries: A Report on the State of the Field"(Machine Learning + Libraries: A Report on the State of the Field"](https://apo.org.au/node/307049) - Ryan Cordell
-* [Towards Knowledge Discovery from the Vatican Secret Archives. In Codice Ratio - Episode 1: Machine Transcription of the Manuscripts](https://dl.acm.org/doi/abs/10.1145/3219819.3219879) - Firmani et al. 2018
+* ["Towards Knowledge Discovery from the Vatican Secret Archives. In Codice Ratio - Episode 1: Machine Transcription of the Manuscripts"](https://dl.acm.org/doi/abs/10.1145/3219819.3219879) - Firmani et al. 2018
 
 ## Acknowledgements
 This work was funded by an internal, Harvard Library’s [Advancing Open Knowledge Grants Program], "...which seeks to advance open knowledge and foster innovation to further diversity, inclusion, belonging and anti-racism", and the code was developed in collaboration with Harvard Library's [*Research Data Management Program*](https://hlrdm.library.harvard.edu/)
