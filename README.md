@@ -43,9 +43,11 @@ The handwritten document transcription data associated with the SAEF project mov
 * [Simple HTR](https://github.com/githubharald/SimpleHTR)
 
 ## Downstream applications
-* bag of words
-* named-entity recognition
-* topic modeling
+* Bag-of-words
+* Named Entity Recognition
+  * [Introduction to Named Entity Recognition with Python](https://github.com/mchesterkadwell/named-entity-recognition)
+* Topic Modeling
+  * [InPho](https://inpho.github.io/topic-explorer/index.html)
 
 ## Further reading
 * [“Compounded Mediation: A Data Archaeology of the Newspaper Navigator Dataset”](https://hcommons.org/deposits/item/hc:32415/) - Lee et al., 2020.
