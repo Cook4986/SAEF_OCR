@@ -32,7 +32,11 @@ The SAEF_OCR notebook returns annotated images (with transcriptions), via the Ha
 The project team considered engaging the "
 
 ## Associated Technologies
-The handwritten document transcription data associated with the SAEF project moves between three primary platforms: Harvard's [Digital Repository Service (DRS)](https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=204385879), where the source material is archived; [NextCloud](https://nextcloud.com/), our secure, medium-term storage solution, where document image data (and metadata) are staged, and (using their desktop client), absolute filepaths are simulated for us in the Python notebook; and the [Harvard Dataverse](https://dataverse.harvard.edu/), a discipline-agnostic data hosting platform for distributing scholarship. Central to the SAEF_OCR throughput notebook is Mike Hucka's [*HandPrint*](https://github.com/caltechlibrary/handprint) library, which automates the batch loading of images to various 3rd party cloud servieces (Google, Amazon, Microsoft) for handwriting transcription. Finally, OCR lookup table used for data management was generated through the use of the Pandas Python library.
+The handwritten document transcription data associated with the SAEF project moves between three primary platforms: Harvard's [Digital Repository Service (DRS)](https://wiki.harvard.edu/confluence/pages/viewpage.action?pageId=204385879), where the source material is archived; [NextCloud](https://nextcloud.com/), our secure, medium-term storage solution, where document image data (and metadata) are staged, and (using their desktop client), absolute filepaths are simulated for us in the Python notebook; and the [Harvard Dataverse](https://dataverse.harvard.edu/), a discipline-agnostic data hosting platform for distributing scholarship. Central to the SAEF_OCR throughput notebook is Mike Hucka's [*HandPrint*](https://github.com/caltechlibrary/handprint) library, which automates the batch loading of images to various 3rd party cloud servieces (Google, Amazon, Microsoft) for handwriting transcription. Finally, OCR lookup table used for data management was generated through the use of the Pandas Python library. Other required python libraries include:
+
+* [pathlib](https://docs.python.org/3/library/pathlib.html)
+* [spacy](https://spacy.io/) (See: "Downstream Applications" section, below)
+* [matplotplib](https://matplotlib.org/stable/index.html)
 
 ## HTR (handwriting transcription) Alternatives
 * [Transkribus](https://readcoop.eu/transkribus/)
