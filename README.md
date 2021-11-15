@@ -56,6 +56,7 @@ The handwritten document transcription data associated with the SAEF project mov
 * ["The Equivalence of "Close" and "Distant" Reading; or, Toward a New OBject for Data-Rich Literary History"](https://read.dukeupress.edu/modern-language-quarterly/article/78/1/77/19924) - Katherine Bode
 * ["Machine Learning + Libraries: A Report on the State of the Field"(Machine Learning + Libraries: A Report on the State of the Field"](https://apo.org.au/node/307049) - Ryan Cordell
 * ["Towards Knowledge Discovery from the Vatican Secret Archives. In Codice Ratio - Episode 1: Machine Transcription of the Manuscripts"](https://dl.acm.org/doi/abs/10.1145/3219819.3219879) - Firmani et al. 2018
+* [""Q i-jtb the Raven: Taking Dirty OCR Seriously"(https://muse.jhu.edu/article/674968) - Cordell 2017
 
 ## Acknowledgements
 This work was funded by an internal, Harvard Library’s [Advancing Open Knowledge Grants Program], "...which seeks to advance open knowledge and foster innovation to further diversity, inclusion, belonging and anti-racism", and the code was developed in collaboration with Harvard Library's [*Research Data Management Program*](https://hlrdm.library.harvard.edu/)
